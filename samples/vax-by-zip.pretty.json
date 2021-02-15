@@ -1,0 +1,26 @@
+{
+  "zip_code":"60601",
+  "date":"2021-02-14T00:00:00.000",
+  "total_doses_daily":"0",
+  "total_doses_cumulative":"2780",
+  "_1st_dose_daily":"0",
+  "_1st_dose_cumulative":"1913",
+  "_1st_dose_percent_population":"0.127",
+  "vaccine_series_completed_daily":"0",
+  "vaccine_series_completed_cumulative":"867",
+  "vaccine_series_completed_percent_population":"0.057",
+  "population":"15083",
+  "zip_code_location":{
+    "type":"Point",
+    "coordinates":[
+      -87.622844,
+      41.886262
+    ]
+  },
+  "row_id":"60601-20210214",
+  ":@computed_region_vrxf_vc4k":"38", // Community Areas
+  ":@computed_region_6mkv_f3dw":"14309", // ZIP Codes
+  ":@computed_region_bdys_3d7i":"580", // Census Tracts
+  ":@computed_region_43wa_7qmu":"36", // Wards
+  ":@computed_region_rpca_8um6":"42" // Boundaries - ZIP Codes
+}
