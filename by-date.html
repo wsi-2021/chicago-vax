@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chicago Vaccinations by ZIP and Day</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" href="screen.css" />
+</head>
+<body>
+
+<main>
+  <h2>February 12, 2021</h2>
+  <table>
+    <caption>Chicago vaccination data by date and ZIP code</caption>
+    <thead>
+      <tr>
+        <th>ZIP Code</th>
+        <th>Daily 1st Dose</th>
+        <th>Daily Complete</th>
+        <th>Total 1st Dose</th>
+        <th>Total Complete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="zip">60641</td>
+        <td class="dose-first">702</td>
+        <td class="dose-compl">201</td>
+        <td class="dose-first-total">4,241</td>
+        <td class="dose-compl-total">335</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
+<template id="zip-data-row">
+  <tr>
+    <td class="zip"></td>
+    <td class="dose-first"></td>
+    <td class="dose-compl"></td>
+    <td class="dose-first-total"></td>
+    <td class="dose-compl-total"></td>
+  </tr>
+</template>
+
+</body>
+</html>
