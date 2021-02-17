@@ -7,6 +7,8 @@ fetch('/samples/60641.json')
     return response.json();
   })
   .then(function(vax_array) {
+    vax_array.sort(sortByField('date'));
+
     for (var i = 0; i < vax_array.length; i++) {
       var row_clone = row_template.content.cloneNode(true);
       row_clone.querySelector('.f-date').innerText = prettyTableDate(vax_array[i]['date']);
@@ -32,4 +34,12 @@ function prettyTableDate(iso_date) {
   // Do awesome things to print a date like
   // Monday 1/4
   return pretty_date;
+}
+
+function sortByField(field) {
+  return function(a,b) {
+    if (a[field] > b[field]) return 1;
+    if (b[field] > a[field]) return -1;
+    return 0;
+  }
 }
