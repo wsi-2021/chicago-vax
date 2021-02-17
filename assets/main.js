@@ -7,7 +7,7 @@ fetch('/samples/60641.json')
     return response.json();
   })
   .then(function(vax_array) {
-    vax_array.sort(sortByField('date'));
+    vax_array.sort(sortByField('date')).reverse();
 
     for (var i = 0; i < vax_array.length; i++) {
       var row_clone = row_template.content.cloneNode(true);
