@@ -9,25 +9,21 @@
 <body>
 
 <main>
-  <h2>February 12, 2021</h2>
+  <h2>Vaccination Data by ZIP Code</h2>
   <table>
-    <caption>Chicago vaccination data by date and ZIP code</caption>
+    <caption>Chicago vaccination for ZIP code 60641</caption>
     <thead>
       <tr>
-        <th>ZIP Code</th>
-        <th>Daily 1st Dose</th>
-        <th>Daily Complete</th>
-        <th>Total 1st Dose</th>
-        <th>Total Complete</th>
+        <th>Date</th>
+        <th>Total Doses</th>
+        <th>First Doses</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="zip">60641</td>
-        <td class="dose-first">702</td>
-        <td class="dose-compl">201</td>
-        <td class="dose-first-total">4,241</td>
-        <td class="dose-compl-total">335</td>
+        <td class="f-date">2021-01-04T00:00:00.000</td>
+        <td class="f-total-doses-daily">110</td>
+        <td class="f-_1st_dose_daily">110</td>
       </tr>
     </tbody>
   </table>
@@ -35,11 +31,9 @@
 
 <template id="zip-data-row">
   <tr>
-    <td class="zip"></td>
-    <td class="dose-first"></td>
-    <td class="dose-compl"></td>
-    <td class="dose-first-total"></td>
-    <td class="dose-compl-total"></td>
+    <td class="f-date"></td>
+    <td class="f-total-doses-daily"></td>
+    <td class="f-_1st_dose_daily"></td>
   </tr>
 </template>
 
